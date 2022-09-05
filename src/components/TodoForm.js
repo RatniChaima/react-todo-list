@@ -23,7 +23,7 @@ function TodoForm(props) {
     <form  onSubmit={handleSubmit}>
         <input
         type="text"
-        placeholder="Enter a Todo"
+        placeholder="Enter a Todo..."
         value={input}
         name="text"
         className="todo-input"

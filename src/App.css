@@ -65,6 +65,7 @@
   padding-left: 0px;
   float: left;
   position: relative;
+  margin-left: 10px;
 }
 .button-delete{
   float: right;
@@ -79,3 +80,9 @@
   cursor: pointer;
 }
 
+@media only screen and (min-width: 600px) {
+
+  .container {
+    display: flex;
+  }
+}
