@@ -1,6 +1,6 @@
 import React from 'react'
-//import TodoForm from './TodoForm'
-import { AiFillDelete } from 'react-icons/ai';
+// //import TodoForm from './TodoForm'
+// import { AiFillDelete } from 'react-icons/ai';
 
 function Todo(todos) {
     //console.log(todos);
