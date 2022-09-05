@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import TodoForm from './TodoForm'
 import { AiFillDelete } from 'react-icons/ai';
-import Todo from './Todo'
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
@@ -26,30 +25,31 @@ function TodoList() {
   return (
     <div className="container">
         <div className="title">
-            To Do
+            TO DO LIST
         </div>
         <TodoForm   onSubmit={addTodo}/>
-        <Todo todos={todos} />
         { todos.map((todo) => (
            <li className="list-items" key={todo.id}>
+                <input type="checkbox"
+                    className="input-checkbox"
+                    label="my value"
+                    value={done}
+                    onChange={isDone}
+                />
                <input 
                type="text"
-               value={todo.title}
-               className="list"
+               value={todo.task}
+               className="input-item"
                onChange={(event) => event.preventDefault()}
                />
-               <button className="button-delete task-button"> 
+               
+                {/* <p>Is it done {done.toString()}</p> */}
+               <button className="button-delete"> 
                    <AiFillDelete 
                    onClick={()=> deleteTodo(todo)}
                    className="delete-icon"/>
                </button>
             
-                <input type="checkbox"
-                    label="my value"
-                    value={done}
-                    onChange={isDone}
-                />
-                {/* <p>Is it done {done.toString()}</p> */}
                 
             </li>
             ))}

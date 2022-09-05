@@ -12,7 +12,7 @@ function TodoForm(props) {
         props.onSubmit({
             id: uuidv4(),
             //id: Math.floor(Math.random() * 10000),
-            title:input,
+            task:input,
             done: false
         })
         setInput('');
@@ -29,7 +29,7 @@ function TodoForm(props) {
         className="todo-input"
         onChange={handleChange}
         />
-        <button className="todo-button">Add </button>
+        <button className="todo-button">Add</button>
 
     </form>
   )

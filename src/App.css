@@ -3,7 +3,6 @@
 .container{
   display: flex;
   flex-direction: column;
-  justify-content: start;
   width: 480px;
   min-height: 400px;
   background: #ffffff;
@@ -34,7 +33,7 @@
 }
 
 .todo-input::placeholder {
-  color: #0079ca;
+  color: #c1c2c4;
 }
 
 .todo-button {
@@ -49,12 +48,34 @@
 }
 
 .list-items{
-  margin-left:  5px;
-  padding: 14px 32px 14px 16px;
+  
+  margin-left:  25px;
+  margin-bottom: 4px;
+  padding: 10px ;
   border-radius: 4px;
-  border: 2px solid #0079ca;
-  outline: none;
-  width: 320px;
-  background: #61bdfa;
+  border: 1.5px solid #caac00;
+  width: 406px;
+  background: #fff6a4;
+  
+  list-style-type: none;
+
+}
+
+.input-item{
+  background: #fff6a4;
+  border: none; 
+  padding-left: 0px;
+}
+.button-delete{
+  float: right;
+  border: none;
+  background:transparent;
+  margin-right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.input-checkbox{
+  float: left;
+  cursor: pointer;
 }
 
