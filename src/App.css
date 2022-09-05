@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 420px;
+  width: 480px;
   min-height: 400px;
   background: #ffffff;
   text-align: center;
@@ -25,6 +25,7 @@
 
 .todo-input {
   padding: 14px 32px 14px 16px;
+  margin-bottom: 25px;
   border-radius: 4px 0 0 4px;
   border: 2px solid #61bdfa;
   outline: none;
@@ -36,6 +37,17 @@
   color: #0079ca;
 }
 
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #4566f8;
+  color: #fff;
+  text-transform: capitalize;
+}
+
 .list-items{
   margin-left:  5px;
   padding: 14px 32px 14px 16px;
@@ -45,3 +57,4 @@
   width: 320px;
   background: #61bdfa;
 }
+
