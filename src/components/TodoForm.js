@@ -9,12 +9,12 @@ function TodoForm(props) {
     const handleSubmit = e => {
         e.preventDefault();
 
-        // props.onSubmit({
-        //     id: uuidv4(),
-        //     text:input
-        // })
+        props.onSubmit({
+           id: uuidv4(),
+            //id: Math.floor(Math.random() * 10000),
+            text:input
+        })
         setInput('');
-
     };
      
 
