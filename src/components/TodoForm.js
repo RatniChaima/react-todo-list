@@ -10,9 +10,9 @@ function TodoForm(props) {
         e.preventDefault();
 
         props.onSubmit({
-           id: uuidv4(),
+            id: uuidv4(),
             //id: Math.floor(Math.random() * 10000),
-            text:input
+            title:input
         })
         setInput('');
     };
