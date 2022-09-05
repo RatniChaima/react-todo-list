@@ -25,7 +25,7 @@ function TodoList() {
   return (
     <div className="container">
         <div className="title">
-            TO DO LIST
+            To Do List
         </div>
         <TodoForm   onSubmit={addTodo}/>
         { todos.map((todo) => (
