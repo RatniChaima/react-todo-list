@@ -4,15 +4,19 @@ import { AiFillDelete } from 'react-icons/ai';
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
+    const [done, setDone] = useState(false);
+
 
     const addTodo = todo => { 
+        if (!todo.task) {
+            return;
+        }
         const newTodo = [ todo, ...todos ];
-
         setTodos(newTodo);
         console.log(todo, ...todos);
     }
 
-    const [done, setDone] = useState(false);
+    
 
     const isDone = () => {
       setDone(!done);
@@ -27,7 +31,7 @@ function TodoList() {
         <div className="title">
             To Do List
         </div>
-        <TodoForm   onSubmit={addTodo}/>
+        <TodoForm onSubmit={addTodo}/>
         { todos.map((todo) => (
            <li className="list-items" key={todo.id}>
                 <input type="checkbox"
